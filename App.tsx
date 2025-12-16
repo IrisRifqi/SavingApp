@@ -2,7 +2,7 @@ import React from 'react';
 import { useColorScheme } from 'react-native';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-import Home from './src/navigation/home/home';
+import { Navigation } from './src/screens/homeScreen';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -11,7 +11,7 @@ function App() {
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-        <Home/>
+        <Navigation />
       </SafeAreaView>
     </SafeAreaProvider>
   );

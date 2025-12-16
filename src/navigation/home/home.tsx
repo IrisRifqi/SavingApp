@@ -1,13 +1,9 @@
 import { TouchableOpacity, Text, View, Image } from 'react-native';
 import StyleSheet from './homeStyle';
 import home1 from '../../assets/images/home1.png';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createStaticNavigation, useNavigation } from '@react-navigation/native';
-import dashboard from '../dashboard/dashboard';
-import { Navigation } from '../../screens/homeScreen'
+import { useNavigation } from '@react-navigation/native';
 
-
-function home() {
+function HomeComponent() {
   const navigation = useNavigation();
   return (
     <View style={StyleSheet.container}>
@@ -28,6 +24,4 @@ function home() {
   );
 }
 
-export default function Home () {
-  return <Navigation />;
-}
+export default HomeComponent;
